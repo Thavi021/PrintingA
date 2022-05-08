@@ -1,0 +1,42 @@
+package printinga;
+
+/**
+ *
+ * @author Thaveshan Naidoo
+ */
+public class PrintingA {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int star = 1;
+        int space = 4;
+        int lines = 5;
+        
+        for(int i = 1; i <= lines; i++)
+        {
+            for(int j = 1; j <= space;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k = 1; k <= star; k++)
+            {
+                if(k ==1||k==star|| i ==3)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            space--;
+            star +=2;
+            System.out.println();
+        }
+            
+    }
+    
+}
